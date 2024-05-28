@@ -4,21 +4,20 @@ import Pricing from "./pages/Pricing";
 import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
-import Login from "./pages/Login";
+import Login from "./pages/Login"; 
 function App() {
   return (
     <div>
-
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="product" element={<Product />}></Route>
-        <Route path="pricing" element={<Pricing />}></Route>
-        <Route path="app" element={<AppLayout />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="*" element={<PageNotFound />}></Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="product" element={<Product />}></Route>
+          <Route path="pricing" element={<Pricing />}></Route>
+          <Route path="app" element={<AppLayout />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="*" element={<PageNotFound />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
